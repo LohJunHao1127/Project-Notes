@@ -54,7 +54,7 @@ properly with global attributes and local attributes allowing for good code mana
 9. ## Data manipulation
     - Modifying, organizing, and transforming data for analysis through filtering, sorting, aggregation, joining, transformation, updating, inserting, and deleting operations.
 
-    - basically sql query but do more with it not just get maybe do something like get maximum of a score or price 
+    - basically sql query but do more with it not just GET maybe do something like get maximum of a score or price 
 
 10. ## Code & Report Quality
     - jus make sure your code is readable and understandable. 
