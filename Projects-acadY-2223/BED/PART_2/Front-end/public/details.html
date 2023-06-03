@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friendbook</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // var film_id = $('#').val();
+        const film_id = localStorage.getItem('film_id');
+        var data = { film_id: film_id };
+        console.log(typeof data)
+        $.ajax({
+            url: `http://localhost:8081/user/searchdetails`,
+            type: 'GET',
+            data: data,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+
+            success: function (response) {
+                console.log(response)
+                const film = response[0];
+                $("#display_details").append(`
+                <h1>Title: ${film.title}</h1>
+                <p style="margin-top: 1rem;">${film.description}</p>
+                <p style="margin-top: 1rem;">Category: ${film.name}</p>
+                <p style="margin-top: 1rem;">Release Year: ${film.release_year}</p>
+                <p style="margin-top: 1rem;">Rating: ${film.rating}</p>
+                `);
+
+
+                $.ajax({
+                    url: `http://localhost:8081/user/searchdetails/actors`,
+                    type: 'GET',
+                    data: data,
+                    success: function (response) {
+                        const actors = response;
+                        actors.forEach((actor, index) => {
+                            const actorHTML = `
+                            <li class="list-group-item">
+                            <p class="card-text">${actor.first_name} ${actor.last_name}</p>
+                            </li>
+                        `;
+                            $("#actors").append(actorHTML);
+                        });
+                    }
+                });
+            }
+        });
+
+    });
+
+
+</script>
+<script>
+
+
+
+
+</script>
+
+<body>
+    <nav>
+        <a class="nav-link" href="/home.html">Home</a>
+        <a class="nav-link" href="/login.html">login</a>
+
+    </nav>
+    <h1 class="text-center">
+        Details
+    </h1>
+
+    <div id="display_details">
+
+
+
+
+    </div>
+    <div id="actors">
+
+    </div>
+
+</body>
+
+</html>

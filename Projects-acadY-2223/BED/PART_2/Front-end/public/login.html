@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/login.css?_&amp;d2lSessionVal=VCTMzxYog32K6Q8AZ8Z05YxzL&amp;ou=173398" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   
+	<script>  
+		$(document).ready(function () {  
+			$("#Login").click(function () {  
+			   var email=$('#email').val();
+			   var pwd=$('#pwd').val();
+				//    var data = "{\"email\":\""+email+"\", \"password\":\""+pwd+"\"}";
+			   var data = JSON.stringify({email:email, password:pwd});
+			   console.log(data);
+			   $.ajax({                                                               
+					url: 'http://localhost:8081/user/login' ,  
+					type: 'POST', 
+					data: data,
+					contentType: "application/json; charset=utf-8",
+					dataType: "json",  
+					success: function (data, textStatus, xhr) {  
+						if (data != null){                    
+						   localStorage.setItem('token',data.token);
+						   localStorage.setItem('userInfo',data.UserData);
+						   window.location.assign("http://localhost:3001/addactor.html");
+						} else {
+							console.log("Error");
+						}                                                                 
+					},  
+					error: function (xhr, textStatus, errorThrown) {  
+						console.log('Error in Operation');  
+					}  
+			   });  
+			   return false;
+			});  
+		});  
+   </script>  
+</head>  
+<body>  
+	<nav class="nav" id="navBar">
+        <a class="nav-link" href="http://localhost:3001/home.html">Home</a>
+        <a class="nav-link" href="http://localhost:3001/addactor.html">Add Actor</a>
+        <a class="nav-link" href="http://localhost:3001/addcustomer.html">Add Customer</a>
+    </nav>
+    <div class="login-form">
+        <!--<form action="http://localhost:3001/profile.html"> -->
+        <form action=""> 
+            <h2 class="text-center">Log in</h2>       
+            <div class="form-group">
+                <input type="text" class="form-control" id="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="pwd" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" id="Login">Log in</button>
+            </div>
+   
+        </form> 
+    </div>
+</body>  
+</html>

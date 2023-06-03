@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friendbook</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#category_id").click(function () {
+            $.ajax({
+                url: 'http://localhost:8081/user/searchcat',
+                type: 'GET',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    var options = '';
+                    for (var i = 0; i < data.length; i++) {
+                        options += `<option value=${data[i].category_id}> ${data[i].name} </option>`;
+                    }
+                    $("#category_id").append(options);
+                },
+                error: function () {
+                    console.error('Error in Operation');
+                }
+            });
+        });
+
+        $("#Search").click(function () {
+
+            var title = $('#title').val();
+            var rental_rate = $('#Max_Price').val();
+            if(rental_rate==""){
+                rental_rate=100000;
+            }
+            var data = { title: title, rental_rate: rental_rate };
+            console.log(data)
+            $.ajax({
+                url: 'http://localhost:8081/user/searchfilm',
+                type: 'GET',
+                data: data,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    if (data != null) {
+                        console.log("Success");
+
+                        
+                        for (var i = 0; i < data.length; i++) {
+                            $("#display_films").append(`
+                        <li class="list-group-item"> 
+                            <a href="javascript:localStorage.setItem('film_id',${data[i].film_id});location.assign('/details.html')">${data[i].film_id}</a> 
+                            <div class="col-6"> 
+                                <h3 class="filmTitle">${data[i].title}</h3> 
+                                
+                                <p class="filmYear">${data[i].release_year}</p> 
+                                <p class="filmRating">${data[i].rating}</p> 
+                            </div> 
+                        </li>`);
+                        }
+
+                    } else {
+                        console.log("Error");
+                        
+                    }
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    console.log(errorThrown)
+                    
+                    console.log('Error in Operation');
+                }
+            });
+            return false;
+        });
+
+        $("#SearchByCat").click(function () {
+
+            var category_id = $('#category_id').val();
+
+
+            var data = JSON.stringify({ category_id: category_id });
+            console.log(data)
+            $.ajax({
+                url: `http://localhost:8081/user/searchfilmbycat/${category_id}`,
+                type: 'GET',
+                data: data,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data, textStatus, xhr) {
+                    if (data != null) {
+                        console.log("Success");
+
+                        console.log(data)
+
+                        for (var i = 0; i < data.length; i++) {
+                            $("#display_films").append(`
+                        <li class="list-group-item"> 
+                            <a href="javascript:localStorage.setItem('film_id',${data[i].film_id});location.assign('/details.html')"  role="button"> ${data[i].film_id} </a> 
+                            <div class="col-6"> 
+                                <h3 class="filmTitle">${data[i].title}</h3> 
+                                <p class="filmCat">${data[i].name}</p> 
+                                <p class="filmYear">${data[i].release_year}</p> 
+                                <p class="filmRating">${data[i].rating}</p> 
+                            </div> 
+                        </li>`);
+                        }
+                        
+                    } else {
+                        console.log("Error");
+                    }
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    console.log(errorThrown)
+                    console.log('Error in Operation');
+                }
+            });
+            return false;
+        });
+    });
+
+
+</script>
+<script>
+
+
+
+
+</script>
+
+<body>
+    <h1 class="text-center">
+        Home
+    </h1>
+
+    <nav>
+        <a class="nav-link" href="http://localhost:3001/home.html">Home</a>
+        <a class="nav-link" href="http://localhost:3001/login.html">login</a>
+
+    </nav>
+    <div class="login-form">
+        <!--<form ="http://localhost:3001/profile.html"> -->
+        <form>
+            <h2 class="text-center">Search Film</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" title="title" id="title" placeholder="Title">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" title="Max_Price" id="Max_Price" placeholder="Max_Price">
+            </div>
+            <div class="form-group">
+                <div class="category">
+                    <label>Search By Category: </label>
+                    <select id="category_id" name="category">
+                        <option value="null" disabled selected>-</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary btn-block" id="Search" title="Search">Search Film</button>
+                <button type="submit" class="btn btn-primary btn-block" id="SearchByCat" title="Search">Search By
+                    Category</button>
+            </div>
+        </form>
+
+        <div id="display_films">
+
+        </div>
+    </div>
+</body>
+
+</html>

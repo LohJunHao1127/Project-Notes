@@ -1,0 +1,22 @@
+{
+  "name": "sp_dvd",
+  "version": "1.0.0",
+  "description": "BED Assignment1 sp_dvd",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "sakila"
+  ],
+  "author": "P2222910 Loh Jun Hao DIT 1B05",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}
