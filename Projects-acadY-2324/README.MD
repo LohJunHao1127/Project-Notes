@@ -20,4 +20,18 @@ For ades, few of the most annoying things are:
 
 As i am writing this , i jus pulled an all nighter for DENG soooooooooo case in point. 
 
+### DENG
+
+Now to deng in the first sem there is two major thing to look out for:
+1. The MST 
+2. The Assignment
+
+The MST is on topic A , B and C (Part 1 , 2 and 3 )
+
++ go into deng file for notes on them (both assignment and mst)
+
+
+
+
+
 
