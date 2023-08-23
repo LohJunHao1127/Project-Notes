@@ -26,25 +26,49 @@ There will be a Team component and a individual component to this assignment
 1. Export the data from the OLTP database into a JSON file
     - The data from the OLTP Tables Should be called from the database using a command and then the output would be then saved into a JSON file in your own computer
     - For e.g:
-      ```
-      -- Export data from SQL Server as JSON
+        ```
+        -- Export data from SQL Server as JSON
 
-      SELECT
-      JSON_QUERY(
-          (
-              SELECT
-                  product_id,
-                  product_name,
-                  description,
-                  standard_cost,
-                  list_price,
-                  category_id
-              FOR JSON PATH
-          )
-      ) AS json_output
-      FROM
-      Products;
-      ```
+            SELECT 
+                * 
+            FROM 
+                Products 
+            FOR JSON AUTO;
+
+        ```
+    - This would be the command to export the data from the Products table into a JSON file
+    
+        ![Alt text](image-1.png)
+
+    - This would be the output of the command
+
+
+    - Next, what i did was click on the blue link and it would send me to a new file on mssql.
+
+
+        ![Alt text](image-2.png)
+
+    - I then saved it as a JSON file in my computer
+        ![Alt text](image-3.png)
+    - Just incase make sure to show the file name extensions as you would need to ensure that you have the correct file name that you would be calling in the mongoimport command
+    - Now go to termial and type in the following command
+        ```
+        cd 'C:\Program Files\MongoDB\Tools\100\bin'
+        ```
+        ![Alt text](image-4.png)
+    - This would change the directory to the bin folder in the mongoDB folder where you can then use the mongoimport command
+    - Next, type in the following command
+        ```
+        mongoimport --db <database name> --collection <collection name> --file <file name>.json --jsonArray
+        ```
+        Here is an example:
+        ```
+        .\mongoimport --db Accessories --collection Products --file "C:\Assignments\DENG\Products.json" --jsonArray /type:JSON
+        ```
+        This is how it should look like on success
+        ![Alt text](image-5.png)
+
+
 
 
 2. Import the JSON file into a NoSQL database (MongoDB)
