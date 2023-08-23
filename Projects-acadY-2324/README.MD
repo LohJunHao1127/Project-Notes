@@ -3,8 +3,29 @@
 In the first few weeks the workload is pretty low and most of the assignments are getting rolled out. 
 
 ### CPF
+1. CA1 
+   - In a few weeks you are going to have to write up a resume for CFP. Since you are prob likely to go for a coding related job, I highly suggest that you make a website portfolio( For either the interview or the resume) which was what my teacher suggested. 
+   - A website portofolio is basically a website that you make to showcase your projects and your skills on a Website. for e.g, you can check out my ades teacher's website portfolio [here](https://jeremiah-ang.github.io) (Not sponsored).
 
-In a few weeks you are going to have to write up a resume for CFP. Since you are prob likely to go for a coding related job, I highly suggest that you make a website portfolio( For either the interview or the resume) which was what my teacher suggested. 
+2. CA2
+   - The CPF interview is gonna basically interview you for the job you stated in your resume. 
+   - The interview is gonna be a 1 on 1 interview with the teacher where you would be ask a few key questions.
+      - Why should they hire you
+      - Where do you see yourself in 5 to 10 years
+      - What do you plan to do to achieve that goal
+      - A few questions that is more specific to your job
+      
+3. CA3 
+   - CA3 would be a role play where you would be doing a roleplay with the teacher and another student.
+   - You would be be told what possible countries that you would be tested on and you would have to do research on that country using this link [here](https://www.hofstede-insights.com/country-comparison-tool). Using the research you would have to do a roleplay with the teacher and another student.
+     - In the research you would have to know how that country's culture compares to us 
+     - With the main focus on the 4 dimensions of culture
+        - Power Distance Index (PDI)
+        - Individualism vs. Collectivism (IDV)
+        - Masculinity vs. Femininity (MAS)
+        - Uncertainty Avoidance Index (UAI)
+
+
 
 ### ADES
 

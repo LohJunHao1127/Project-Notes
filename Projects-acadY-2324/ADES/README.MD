@@ -25,38 +25,38 @@ it would be graded based on individual functions that you have made
 7. ## Sequential requests
     - Using .then(output){code the uses the output} 
     - for e.g.
-```
-module.exports.getAllHighscore = function (userid) {
-  return pool
-    .query("SELECT userid , gameid , highscore, score FROM record WHERE userid = ?", [userid])
-    .then((result) => {
-      if (result.length === 0) {
-        throw new NotFoundError(`User ${userid} not found`);
-      }
-      return result;
-    });
-};
+    ```
+    module.exports.getAllHighscore = function (userid) {
+    return pool
+        .query("SELECT userid , gameid , highscore, score FROM record WHERE userid = ?", [userid])
+        .then((result) => {
+        if (result.length === 0) {
+            throw new NotFoundError(`User ${userid} not found`);
+        }
+        return result;
+        });
+    };
 
-```
+    ```
 
-- In the example above the .query() sends the sql query to the database and when the result is send out.
+   - In the example above the .query() sends the sql query to the database and when the result is send out.
 
-- the result is sent to the next .then(result) where the .then receives the data as a result parameter 
+   - the result is sent to the next .then(result) where the .then receives the data as a result parameter 
 
-- And this would continue to flow as long as there is a another .then()
+   - And this would continue to flow as long as there is a another .then()
 
-- where it would receive returned data as the parameter that in set in the .then bracket   
+   - where it would receive returned data as the parameter that in set in the .then bracket   
 
 
 8. ## State management
     - basically ChatGPT said that this is like having all your attributes declared 
 properly with global attributes and local attributes allowing for good code management 
-9. ## Data manipulation
+1. ## Data manipulation
     - Modifying, organizing, and transforming data for analysis through filtering, sorting, aggregation, joining, transformation, updating, inserting, and deleting operations.
 
     - basically sql query but do more with it not just GET maybe do something like get maximum of a score or price 
 
-10. ## Code & Report Quality
+2.  ## Code & Report Quality
     - jus make sure your code is readable and understandable. 
 
     - tip when doing your commits to github make sure you make your description as descriptive as possible as you might need to find a certain commit for your report 
@@ -64,5 +64,5 @@ properly with global attributes and local attributes allowing for good code mana
 
 ### *P.S* Note that the css is not important in assignment 1
 
-### testing ades
+
 
