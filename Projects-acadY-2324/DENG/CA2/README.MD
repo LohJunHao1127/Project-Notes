@@ -51,6 +51,11 @@ There will be a Team component and a individual component to this assignment
     - I then saved it as a JSON file in my computer
         ![Alt text](image-3.png)
     - Just incase make sure to show the file name extensions as you would need to ensure that you have the correct file name that you would be calling in the mongoimport command
+    
+
+
+
+2. Import the JSON file into a NoSQL database (MongoDB)
     - Now go to termial and type in the following command
         ```
         cd 'C:\Program Files\MongoDB\Tools\100\bin'
@@ -64,14 +69,12 @@ There will be a Team component and a individual component to this assignment
         Here is an example:
         ```
         .\mongoimport --db Accessories --collection Products --file "C:\Assignments\DENG\Products.json" --jsonArray /type:JSON
+
+        
         ```
         This is how it should look like on success
         ![Alt text](image-5.png)
 
-
-
-
-2. Import the JSON file into a NoSQL database (MongoDB)
 
 
 3. Come up with insightful queries that will be used to query the NoSQL database
