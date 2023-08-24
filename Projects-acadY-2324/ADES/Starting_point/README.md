@@ -32,3 +32,11 @@
 2. You should see the list of instructions on the web page.
 
 3. Make changes, create commits, and push to the repository to submit your implementations.
+
+## Extra Notes
+
+In order to get the planet scale password and username, you need to create a database in planet scale and then click on the connect button. You should see the username and password there.
+
+For E.g:
+![Alt text](image.png)
+fill in the rest of the details accordingly
