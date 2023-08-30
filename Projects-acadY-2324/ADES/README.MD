@@ -25,19 +25,19 @@ it would be graded based on individual functions that you have made
 ## 7. Sequential requests
 - Using .then(output){code the uses the output} 
 - for e.g.
-```
-module.exports.getAllHighscore = function (userid) {
-return pool
-    .query("SELECT userid , gameid , highscore, score FROM record WHERE userid = ?", [userid])
-    .then((result) => {
-    if (result.length === 0) {
-        throw new NotFoundError(`User ${userid} not found`);
-    }
-    return result;
-    });
-};
+    ```
+    module.exports.getAllHighscore = function (userid) {
+    return pool
+        .query("SELECT userid , gameid , highscore, score FROM record WHERE userid = ?", [userid])
+        .then((result) => {
+        if (result.length === 0) {
+            throw new NotFoundError(`User ${userid} not found`);
+        }
+        return result;
+        });
+    };
 
-```
+    ```
 
 - In the example above the .query() sends the sql query to the database and when the result is send out.
 
@@ -83,7 +83,7 @@ properly with global attributes and local attributes allowing for good code mana
 - if your app is a social media app make sure that they can chat with each other and post stuff
 - if your app is a food delivery app make sure that they can order food and pay for it
 
- 
+
 ## 2. Product usability
 - Make sure that the user can use your app with ease and that the user can understand what is going on in your app
 ## 3. Usability test
