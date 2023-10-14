@@ -1,6 +1,14 @@
-# General Adivice for those taking Ades and DENG
-## And mb some other stuff:
-In the first few weeks the workload is pretty low and most of the assignments are getting rolled out. 
+# General Adivice
+
+
+## Table of Contents:
+
+1. [CPF](#CPF)
+2. [ADES](#ADES)
+3. [DENG](#DENG)
+
+
+
 
 ### CPF
 1. CA1 
