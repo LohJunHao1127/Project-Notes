@@ -1,11 +1,11 @@
 # General Adivice
 
 
-## Table of Contents:
+# Table of Contents:
 
-1. [CPF](#CPF)
-2. [ADES](#ADES)
-3. [DENG](#DENG)
+## 1. [CPF](#CPF)
+## 2. [ADES](#ADES)
+## 3. [DENG](#DENG)
 
 
 
