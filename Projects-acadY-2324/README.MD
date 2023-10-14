@@ -6,6 +6,7 @@ In the first few weeks the workload is pretty low and most of the assignments ar
 1. CA1 
    - In a few weeks you are going to have to write up a resume for CFP. Since you are prob likely to go for a coding related job, I highly suggest that you make a website portfolio( For either the interview or the resume) which was what my teacher suggested. 
    - A website portofolio is basically a website that you make to showcase your projects and your skills on a Website. for e.g, you can check out my ades teacher's website portfolio [here](https://jeremiah-ang.github.io) (Not sponsored).
+   - But the most important thing to note is that you have to make sure that your resume is good the portfolio is just a bonus. your resume must have a career statement or objective, your education, your skills (If your teacher is Louwena she will ask you to pull more hard skills and soft skills into it) , your Interests and any awards or achievements or work experience-if you have any .
 
 2. CA2
    - The CPF interview is gonna basically interview you for the job you stated in your resume. 
@@ -24,6 +25,13 @@ In the first few weeks the workload is pretty low and most of the assignments ar
         - Individualism vs. Collectivism (IDV)
         - Masculinity vs. Femininity (MAS)
         - Uncertainty Avoidance Index (UAI)
+   
+   *Ps: There is a good chance that louwena might do the the counties in alternating order meaning that she might test the first person on germany and singapore then the next person malaysia and singapore. At the same time, they wont ask you on the scores of each countries instead they will ask you "my teammate is sick but my teammate from malaysia is not wiling to take over his work and help him , i just dont understand why" then you have to explain using the scores that you know *
+   *Pps: she might ask the same questions for the different countries like it will be the same for everyone tested on malaysia and singapore but different for the other group*
+
+   Some of the questions that you might be asked are:
+   - there is a grp of teammates from so and so country and they are being very stubborn about not using the new system that your team have all decided to use. Even tho the new system is much better than the old one. i just dont know why they are being so stubborn about not using it.
+      - Answer : they might not be willing to do that bc they are afraid of change and they are afraid that they might not be able to adapt to the new system. This is because of the high uncertainty avoidance index of the country. The other reason might be that they have a high masculinity score and they are afraid that they might not be able use the new system as well as the old one and they might achieve less than what they are used to.
 
 
 
