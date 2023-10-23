@@ -25,7 +25,7 @@ it would be graded based on individual functions that you have made
 ## 7. Sequential requests
 - Using .then(output){code the uses the output} 
 - for e.g.
-    ```
+    ```js
     module.exports.getAllHighscore = function (userid) {
     return pool
         .query("SELECT userid , gameid , highscore, score FROM record WHERE userid = ?", [userid])

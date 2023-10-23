@@ -26,6 +26,3 @@ you will be tested on whether doing something like inserting would violate any r
 
 4. typically the last question would be about the drawing of the er diagram. it is a enhanced er diagram meaning no many to many.
 
-topic A : Mostly just introductions to data engineering and what type of data there are
-
-topic B : 

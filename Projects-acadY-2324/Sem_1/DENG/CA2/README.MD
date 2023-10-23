@@ -26,7 +26,7 @@ There will be a Team component and a individual component to this assignment
 1. Export the data from the OLTP database into a JSON file
     - The data from the OLTP Tables Should be called from the database using a command and then the output would be then saved into a JSON file in your own computer
     - For e.g:
-        ```
+        ```sql
         -- Export data from SQL Server as JSON
 
             SELECT 
@@ -57,17 +57,17 @@ There will be a Team component and a individual component to this assignment
 
 2. Import the JSON file into a NoSQL database (MongoDB)
     - Now go to termial and type in the following command
-        ```
+        ```cmd
         cd 'C:\Program Files\MongoDB\Tools\100\bin'
         ```
         ![Alt text](image-4.png)
     - This would change the directory to the bin folder in the mongoDB folder where you can then use the mongoimport command
     - Next, type in the following command
-        ```
+        ```cmd
         mongoimport --db <database name> --collection <collection name> --file <file name>.json --jsonArray
         ```
         Here is an example:
-        ```
+        ```cmd
         .\mongoimport --db Accessories --collection Products --file "C:\Assignments\DENG\Products.json" --jsonArray /type:JSON
 
         
