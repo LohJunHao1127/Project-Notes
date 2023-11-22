@@ -51,16 +51,16 @@ Availability of the data - data is available when needed
 
 ## OWASP Top 10
 
-  - ## A1:[Injection](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a12017-injection)
-  - ## A2:Broken Authentication
-  - ## A3:Sensitive Data Exposure
-  - ## A4:XML External Entities (XXE)
-  - ## A5:Broken Access Control
-  - ## A6:Security Misconfiguration
-  - ## A7:Cross-Site Scripting (XSS)
-  - ## A8:Insecure Deserialization
-  - ## A9:Using Components with Known Vulnerabilities
-  - ## A10:Insufficient Logging&Monitoring
+  - ## [A1:Injection](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a12017-injection)
+  - ## [A2:Broken Authentication](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a22017-broken-authentication)
+  - ## [A3:Sensitive Data Exposure](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a22017-broken-authentication)
+  - ## [A4:XML External Entities (XXE)](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a42017-xml-external-entities-xxe)
+  - ## [A5:Broken Access Control](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a52017-broken-access-control)
+  - ## [A6:Security Misconfiguration](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a62017-security-misconfiguration)
+  - ## [A7:Cross-Site Scripting (XSS)](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a72017-cross-site-scripting-xss)
+  - ## [A8:Insecure Deserialization](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a82017-insecure-deserialization)
+  - ## [A9:Using Components with Known Vulnerabilities](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a92017-using-components-with-known-vulnerabilities)
+  - ## [A10:Insufficient Logging&Monitoring](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a102017-insufficient-loggingmonitoring)
 
 
 
