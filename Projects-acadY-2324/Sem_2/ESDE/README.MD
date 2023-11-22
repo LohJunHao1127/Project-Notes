@@ -51,18 +51,18 @@ Availability of the data - data is available when needed
 
 ## OWASP Top 10
 
-  - ## [A1:2017-Injection](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a12017-injection)
-  - ## A2:2017-Broken Authentication
-  - ## A3:2017-Sensitive Data Exposure
-  - ## A4:2017-XML External Entities (XXE)
-  - ## A5:2017-Broken Access Control
-  - ## A6:2017-Security Misconfiguration
-  - ## A7:2017-Cross-Site Scripting (XSS)
-  - ## A8:2017-Insecure Deserialization
-  - ## A9:2017-Using Components with Known Vulnerabilities
-  - ## A10:2017-Insufficient Logging&Monitoring
+  - ## A1:[Injection](https://github.com/LohJunHao1127/Project-Notes/tree/main/Projects-acadY-2324/Sem_2/ESDE/#a12017-injection)
+  - ## A2:Broken Authentication
+  - ## A3:Sensitive Data Exposure
+  - ## A4:XML External Entities (XXE)
+  - ## A5:Broken Access Control
+  - ## A6:Security Misconfiguration
+  - ## A7:Cross-Site Scripting (XSS)
+  - ## A8:Insecure Deserialization
+  - ## A9:Using Components with Known Vulnerabilities
+  - ## A10:Insufficient Logging&Monitoring
 
-Make a link at here to the OWASP Top 10 website 
+
 
 # How To minimize the risk of these flaws
 
